@@ -170,19 +170,23 @@ export default function Login() {
               {isLoading ? 'Logging In...' : 'Log In'}
             </button>
           </motion.div>
-          <motion.div
+        <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.7 }}
             className="pt-4 text-center"
-          >
-            <p className="text-gray-700">
-              Don't have an account?
-              <a href="/signup" className="text-[#FF7622] hover:underline transition duration-300 ease-in-out transform hover:scale-105 inline-block">
-                Sign Up
-              </a>
-            </p>
-          </motion.div>
+            >
+        <p className="text-gray-700">
+          Don&apos;t have an account?
+      <a
+      href="/signup"
+      className="text-[#FF7622] hover:underline transition duration-300 ease-in-out transform hover:scale-105 inline-block"
+      >
+      Sign Up
+    </a>
+  </p>
+</motion.div>
+
         </form>
       </motion.div>
     </div>
