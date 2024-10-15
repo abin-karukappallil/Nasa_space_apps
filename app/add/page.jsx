@@ -6,6 +6,7 @@ import axios from 'axios';
 import Cookies from 'js-cookie';
 import React, { useState } from 'react';
 import {Router, useRouter} from 'next/navigation';
+import Image from 'next/image';
 
 
 export default function UploadPage() {
@@ -93,7 +94,7 @@ export default function UploadPage() {
           <label className="block text-gray-700 font-bold mb-2">Upload Photo</label>
           <div className="flex items-center gap-4">
             {image ? (
-              <img src={image} alt="Preview" className="w-24 h-24 object-cover rounded-md" />
+              <Image src={image} alt="Preview" className="w-24 h-24 object-cover rounded-md" />
             ) : (
               <div className="w-24 h-24 bg-gray-200 flex items-center justify-center text-gray-500 pl-5">
                 Image Preview
