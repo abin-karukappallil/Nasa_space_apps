@@ -177,7 +177,7 @@ export default function Login() {
             className="pt-4 text-center"
           >
             <p className="text-gray-700">
-              Don't have an account?{' '}
+              Don't have an account?
               <a href="/signup" className="text-[#FF7622] hover:underline transition duration-300 ease-in-out transform hover:scale-105 inline-block">
                 Sign Up
               </a>
